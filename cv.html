@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CV</title>
+	<link rel="icon" href="./assets/cv.png">
+	<link rel="stylesheet" type="text/css" href="./assets/styles_cv.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".full_info_wrap .tabs ul li").click(function(){
+				$(".full_info_wrap .tabs ul li").removeClass("active");
+				$(this).addClass("active");
+
+				var datali = $(this).attr("data-li");
+
+				$(".full_info_item").hide();
+
+				if(datali == "experience"){
+					$(".experience").show();
+				}
+				else if(datali == "education"){
+					$(".education").show();
+				}
+				else if(datali == "contact"){
+					$(".contact").show();
+				}
+				else{
+					console.log("Loding...");
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+
+	<div class="wrapper">
+		
+		<div class="resume">
+
+			<div class="profile_info">
+
+				<div class="profile_img">
+					<img src="./assets/dika.png" alt="profile_pic">
+				</div>
+				<div class="profile_data">
+					<p class="name"> IDA PUTU ANDIKA</p>
+					 <span><i class="fas fa-map-marker-alt"></i> Mataram, NTB</span>
+				</div>
+				<div class="view_more_btn">
+					<a href="index.html">HOME</a>
+				</div>
+			</div>
+				
+
+
+			<div class="skills">
+				<div class="title">Skills</div>
+				<ul>
+					<li>
+						<div class="skill_item html">
+							<div class="icon"></div>
+							<div class="text">HTML</div>
+						</div>
+					</li>
+					<li>
+						<div class="skill_item css">
+							<div class="icon"></div>
+							<div class="text">CSS</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="skill_item js">
+							<div class="icon"></div>
+							<div class="text">Javascript</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="skill_item photoshop">
+							<div class="icon"></div>
+							<div class="text">Photoshop</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="skill_item angular">
+							<div class="icon"></div>
+							<div class="text">Angular</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="skill_item react">
+							<div class="icon"></div>
+							<div class="text">ReactJs</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="full_info_wrap">
+				<div class="tabs">
+					<ul>
+						<li data-li="experience" class="active">Oganization</li>
+						<li data-li="education">Education</li>
+						<li data-li="contact">Contact</li>
+					</ul>
+				</div>
+
+				<div class="full_info">
+
+					<div class="full_info_item experience">
+						<div class="title"> ORGANIZATION EXPERIENCE</div>
+
+						<div class="info_wrap">
+							<ul>
+								<li>
+									<div class="sub_title">
+										2016 - 2017
+									</div>
+
+									<div class="info-item">
+										<div class="info_title">
+											SJF SMALA
+										</div>
+										
+									</div>
+								</li>
+								<li>
+									<div class="sub_title">
+										2016 - 2017
+									</div>
+
+									<div class="info-item">
+										<div class="info_title">
+											IKMH SMALA
+										</div>
+										
+									</div>
+								</li>
+								<li>
+									<div class="sub_title">
+										2017
+									</div>
+
+									<div class="info-item">
+										<div class="info_title">
+											SCOUT SMALA
+										</div>
+										
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="full_info_item education" style="display: none;">
+						<div class="title">EDUCATION</div>
+
+						<div class="info_wrap">
+							<ul>
+								<li>
+									<div class="sub_title">
+										2006 - 2012
+									</div>
+
+									<div class="info-item">
+										<div class="info_title">
+											SDN 44 AMPENAN
+										</div>
+										
+									</div>
+								</li>
+								<li>
+									<div class="sub_title">
+										2012 - 2015
+									</div>
+
+									<div class="info-item">
+										<div class="info_title">
+											SMPN 7 MATARAM
+										</div>
+										
+									</div>
+								</li>
+								<li>
+									<div class="sub_title">
+										2015 - 2018
+									</div>
+
+									<div class="info-item">
+										<div class="info_title">
+											SMAN 5 MATARAM
+										</div>
+										
+									</div>
+								</li>
+								<li>
+									<div class="sub_title">
+										2018 - NOW
+									</div>
+
+									<div class="info-item">
+										<div class="info_title">
+											BUMIGORA UNIVERSITY
+										</div>
+										
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="full_info_item contact" style="display: none;">
+							<div class="title">CONTACT</div>
+
+						<div class="info_wrap">
+							<ul>
+								<li>
+									<span class="info_q">
+										Email
+									</span>
+									<span class="info_a">
+										utu.andika28@gmail.com
+									</span>
+								</li>
+								
+								<li>
+									<span class="info_q">
+										Website
+									</span>
+									<span class="info_a">
+										flow.page/aandika28
+									</span>
+								</li>
+								<li>
+									<span class="info_q">
+										Phone
+									</span>
+									<span class="info_a">
+										087823270806
+									</span>
+								</li>
+								<li>
+									<span class="info_q">
+										Line
+									</span>
+									<span class="info_a">
+										aandika28
+									</span>
+								</li>
+								<li>
+									<span class="info_q">
+										Instagram
+									</span>
+									<span class="info_a">
+										aandika28
+									</span>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+
+				</div>
+    		
+			</div>
+
+			
+    	</div>
+		</div>
+
+	</div>
+					
+
+</body>
+</html>
